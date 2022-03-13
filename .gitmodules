@@ -1,0 +1,3 @@
+[submodule "mpv-splice"]
+	path = mpv-splice
+	url = https://github.com/TeaWhyDee/mpv-yt-splice
