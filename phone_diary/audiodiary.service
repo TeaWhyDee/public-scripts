@@ -1,0 +1,8 @@
+[Unit]
+Description=Audiodiary
+
+[Service]
+ExecStart=bash ~/Documents/scripts/phone_diary/watchscript
+
+[Install]
+WantedBy=default.target

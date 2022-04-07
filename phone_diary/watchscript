@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+# You can run this script as a service (at boot).
+
+# From https://github.com/TeaWhyDee/public-scripts
+# Only tested with Syncthing syncing.
+# Please run ./speech_to_diary.sh -h to see info and arguments for that script.
+# Modify this script to your liking. 
+# You can start it at system startup with systemd or other service manager.
+
+# Set LAN_STT environment variable to choose speech recognition language.
+# Example: STT_LAN="en-US"
+# Set $VIMWIKIPATH environment variable to set the vimwiki root directory.
+
+# Please notice that the following command checks the folders recursively.
+inotifywait -c -r -m -e attrib ~/Documents/scripts/phone_diary/watch/ | gawk --field-separator ',' '{print "\""$1$3"\""; fflush()}' | xargs -L 1 ~/Documents/scripts/phone_diary/speech_to_diary.sh
