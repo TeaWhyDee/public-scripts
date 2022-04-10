@@ -1,4 +1,4 @@
-Associated blog post:  
+Associated blog post: https://teawide.xyz/blog/post/speech_to_text_diary_scripts
 
 Main script is watchscript. Edit it's contents with your filepaths.  
 You can run it as a systemd module. To do that, make sure to
