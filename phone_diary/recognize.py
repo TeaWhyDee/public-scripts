@@ -17,6 +17,7 @@ with sr.AudioFile(filename) as source:
     text="Couldn't run Speech to text."
     try:
         text = r.recognize_google(audio, language=lan)
+        # text = r.recognize_google_cloud(audio, language=lan)
         # text = r.recognize_sphinx(audio)
     except sr.UnknownValueError:
         print("Couldn't recognize speech.")

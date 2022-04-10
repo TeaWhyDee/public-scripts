@@ -5,8 +5,7 @@ Description=Audiodiary
 ExecStart=bash ~/Documents/scripts/phone_diary/watchscript
 # Environment=STT_LAN="en-US"
 # Environment=VIMWIKIPATH=~/vimwiki
-Environment=PATH_TO_WATCH=~/Documents/scripts/phone_diary/watch/
-Environment=PATH_TO_SPEECH_TO_DIARY=~/Documents/scripts/phone_diary/speech_to_diary.sh
+Environment=PATH_TO_WATCH=/path/to/phone_diary/watch/
 
 [Install]
 WantedBy=default.target
