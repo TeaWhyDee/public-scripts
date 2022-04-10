@@ -1,11 +1,19 @@
 Associated blog post:  
 
-Main script is watchscript. Edit it's contents with your filepaths.
-Run:
-``speech_to_diary.sh -h``
-to see a help message.  
+Main script is watchscript. Edit it's contents with your filepaths.  
 You can run it as a systemd module. To do that, make sure to
-specify a correct path in audiodiary.service
-and copy it to ~/.config/systemd/user. Then run:
-``systemctl --user enable audiodiary.service``
+specify a correct path in ``audiodiary.service``
+and copy it to ``~/.config/systemd/user``.  
+Then run:  
+```bash
+ systemctl --user daemon-reload && systemctl --user enable audiodiary.service
+```
+You can specify environment variables
 
+``watchscript`` calls another script, ``speech_to_diary.sh``
+each time a new file appears in the watch
+directory.
+To see a help message, run:  
+```bash
+speech_to_diary.sh -h
+```  

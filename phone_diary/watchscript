@@ -13,4 +13,4 @@
 # Set $VIMWIKIPATH environment variable to set the vimwiki root directory.
 
 # Please notice that the following command checks the folders recursively.
-inotifywait -c -r -m -e attrib ~/Documents/scripts/phone_diary/watch/ | gawk --field-separator ',' '{print "\""$1$3"\""; fflush()}' | xargs -L 1 ~/Documents/scripts/phone_diary/speech_to_diary.sh
+inotifywait -c -r -m -e attrib $PATH_TO_WATCH | gawk --field-separator ',' '{print "\""$1$3"\""; fflush()}' | xargs -L 1 $PATH_TO_SPEECH_TO_DIARY
