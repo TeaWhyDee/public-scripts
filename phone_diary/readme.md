@@ -28,4 +28,4 @@ To see a help message, run:
 speech_to_diary.sh -h
 ```  
 Modify watchscipt if you want to specify some flags.  
-Modify recognize.py if you want different a speech recognition option.
+Modify recognize.py if you want a different speech recognition option.
