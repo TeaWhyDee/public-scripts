@@ -13,7 +13,7 @@ STT_LAN="en-US"
 VIMWIKIPATH=/path/to/vimwiki
 ```
 You can run it as a systemd module. To do that, make sure to
-specify a correct env varialbes in ``audiodiary.service``
+specify correct env varialbes in ``audiodiary.service``
 and copy it to ``~/.config/systemd/user``.  
 Then run:  
 ```bash
