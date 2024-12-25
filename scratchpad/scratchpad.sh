@@ -29,6 +29,8 @@ while [ "$1" != "" ]; do
 done
 
 if [ ! "$cmd" ]; then
+    # Example cmd:
+    # cmd="alacritty --class 'myclass,myclass' -e nvim"
     echo no cmd provided
     exit 1
 fi
